@@ -1,0 +1,70 @@
+
+@charset "UTF-8";
+/* CSS Document */
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
+h1 {
+	font-family: 'Black Ops One', cursive;
+	font-size: 2rem;
+	margin-bottom: 20px;
+	
+}
+
+p {
+	margin-top: 20px;
+	
+}
+
+.footer {
+	margin-bottom: 100px;
+}
+
+#game {
+	width: 500px;
+	height: 200px;
+	border: 1px solid black;
+}
+
+#charakter {
+	
+	background-image: url("./img/charakter.gif");
+	background-repeat: no-repeat;
+	
+	position: relative;
+	top: 150px;
+}
+
+.animate {
+	animation: jump 500ms ;
+}
+
+@keyframes jump {
+	0%{top:150px;}
+	30%{top:100px;}
+	70%{top:100px;}
+	100%{top:150px;}
+	
+}
+
+#block {
+	
+	background-image: url("./img/block.gif");
+	background-repeat: no-repeat;
+	position: relative;
+	top: 130px;
+	left: 480px;
+	animation: block 1s infinite linear;
+}
+
+@keyframes block {
+	0% {
+		left:480px;
+		}
+	100% {
+		left:-40px;
+	}
+}
