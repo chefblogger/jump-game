@@ -5,6 +5,7 @@ var block = document.getElementById("block");
 
 var runde = 0;
 
+
 function jump(){
 	if(charakter.classList != "animate"){
 		charakter.classList.add("animate");
@@ -32,6 +33,7 @@ var checkDead = setInterval(function(){
 		
 		
 		alert("ups, you've lost\nScore:"+ runde)
+		
 		
 	};
 },10);
